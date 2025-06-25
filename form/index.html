@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is learning of html form">
+    <meta name="keywords" content="form, html">
+    <title>learn form</title>
+</head>
+
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Enter your username">
+        </div>
+        <div>
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+            <label for="subscribe">Subscribe to newsletter</label>
+        </div>
+        <label for="textarea">Enter your review:</label>
+
+        <textarea name="review" id="textarea" placeholder="Enter your review here"></textarea>
+        <div>
+            <label for="fruits">Select your Fruits:</label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+        <br>
+        <div><center>
+            <input type="submit" value="Submit">
+        </center></div>
+    </form>
+</body>
+
+</html>
