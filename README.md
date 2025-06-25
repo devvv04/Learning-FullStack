@@ -1,2 +1,2 @@
 # basic-web
-first integration with html, css, javascript
+learning full stack step by step
