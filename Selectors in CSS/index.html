@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of Selectors</title>
+    <style>
+        div1 {
+            background-color: rgb(234, 160, 64);
+        }
+
+        .red {
+            background-color: aqua;
+        }
+
+        #name {
+            background-color: beige;
+        }
+
+        div>p {
+            text-decoration: underline;
+        }
+
+        /*div p {
+            background-color: blue;
+        }*/
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p:first-child {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Element Selector:</h3>
+    <div1>
+        This is Element selector.
+    </div1>
+    <h3>Class Selector:</h3>
+    <div class="red">
+        <h6>Lorem ipsum dolor sit amet consectetur.</h6>
+        <p>This is a class selector</p>
+    </div>
+    <h3>ID Selector:</h3>
+    <div id="name">
+        This is an id selector
+    </div>
+    <h3>Child selector: </h3>
+    <div>
+        <p>Lorem ipsum dolor sit amet. also applied to class Selector</p>
+    </div>
+    <!-- <h3>Descendant selector:</h3>
+    <div>
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+    </div>-->
+    <h3>Universal Selector:</h3>
+    <div>
+        <p>Lorem, ipsum dolor.</p>
+        <h6>Lorem ipsum dolor sit amet.</h6>
+    </div>
+
+
+
+</body>
+
+</html>
