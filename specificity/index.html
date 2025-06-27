@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /*Universal have 0 specificity point*/
+        * {
+            color: rgb(157, 123, 22);
+        }
+
+        /* class selector have 10 specificity */
+        .color {
+            color: blue;
+        }
+
+        /* class selector have 10 specificity */
+        .yellow {
+            color: rgb(231, 16, 131);
+
+        }
+
+        /*element selectr have 1 specificity*/
+        h1 {
+            color: rgb(91, 242, 98);
+            /*lowest specificity*/
+        }
+
+        /*id selector have 100 specificty*/
+        #id {
+            color: chocolate;
+        }
+
+        /*psuedo element*/
+        h1::after {
+            content: "after";
+        }
+
+        /*elemet class + psuedo class  - 1+10=11*/
+        h1:hover {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: blueviolet;" id="id" class="color yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facere, ducimus?</h1>
+</body>
+
+</html>
