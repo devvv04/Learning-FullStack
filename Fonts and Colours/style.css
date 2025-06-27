@@ -1,0 +1,31 @@
+.family {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.other {
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: overline;
+    font-size: 25px;
+    line-height: 3;
+    text-decoration-style: double;
+}
+
+h1 {
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 7px;
+    text-decoration-style: dashed;
+    text-indent: 100px;
+}
+
+.box {
+    border: 4px solid red;
+    width: 200px;
+    height: 200px;
+    overflow: scroll
+}
