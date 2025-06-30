@@ -1,0 +1,19 @@
+.line li {
+    /* list-style: none; */
+    list-style-type: "❤";
+    background-color: aqua;
+    /* to add bg color to marker use inside */
+    list-style-position: inside;
+}
+
+.flex ul {
+    display: flex;
+}
+
+.flex li {
+    padding: 12px;
+    list-style: none;
+    border: 2px solid red;
+    margin: 20px;
+
+}
