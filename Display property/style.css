@@ -1,0 +1,23 @@
+.container {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    display: inline-block;
+    justify-content: center;
+    padding: 35px;
+    margin: 25px;
+    width: 30vw;
+}
+
+.flex {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+li {
+    background-color: aqua;
+    margin: 12px;
+    width: 100px;
+    padding: 12px;
+    line-height: 75px;
+    text-align: center;
+}
