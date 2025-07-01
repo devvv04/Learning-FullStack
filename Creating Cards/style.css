@@ -1,0 +1,56 @@
+ body {
+     margin: 0px;
+     padding: 0;
+     background-color: rgb(223, 202, 246);
+ }
+
+ .parent {
+     border: 2px solid grey;
+     margin: 70px;
+     padding: 10px;
+     background-color: rgb(234, 238, 243);
+     border-radius: 7px;
+     height: 460px;
+     width: 300px;
+ }
+
+ img {
+     border-radius: 7px;
+ }
+
+ .box {
+     padding-left: px;
+ }
+
+ .box span {
+     display: inline-flex;
+     border: 1px solid rgb(126, 114, 114);
+     padding: 4px;
+     border-radius: 7px;
+ }
+
+ .content h2 {
+     font-family: sans-serif;
+ }
+
+ .content p {
+     font-size: 15px;
+     font-family: sans-serif;
+ }
+
+ .button {
+     text-align: center;
+ }
+
+ button {
+     border-radius: 15px;
+     background-color: rgb(162, 208, 248);
+     color: blue;
+     padding: 5px 15px;
+     border: none;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: rgb(148, 148, 254);
+ }
