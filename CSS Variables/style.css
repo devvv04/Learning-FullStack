@@ -1,0 +1,38 @@
+:root {
+    --color: rgb(11, 48, 236);
+    --seccolor: rgb(141, 160, 253);
+    --etc: rgb(196, 241, 18);
+    --padd: 45px;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: var(--seccolor);
+}
+
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    list-style: none;
+    padding: var(--padd);
+    border: 5px solid var(--etc);
+
+}
+
+ul li:first-child {
+    --color: rgb(240, 27, 173);
+    background-color: var(--color);
+}
+
+.class {
+    background-color: var(--color);
+}
