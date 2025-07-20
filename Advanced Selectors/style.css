@@ -1,0 +1,54 @@
+
+
+ /* apply to first line */
+ .box1::first-line {
+     color: red;
+ }
+
+ /* universal class selector */
+ .main * {
+     border: 2px solid rgb(17, 13, 130);
+ }
+
+ /* multiple selector */
+ p,
+ h5 {
+     color: blueviolet;
+ }
+
+ /* nth child  */
+ .main div:nth-child(even) {
+     background-color: rgb(222, 169, 11);
+ }
+
+ /* last nth child  */
+ .main div:nth-last-child(3) {
+     background-color: coral;
+ }
+
+ /* before AND AFTER  */
+ .main::before {
+     content: "My name is Dev";
+ }
+
+ .main::after {
+     content: "i have completed this";
+ }
+
+ /* selected text */
+ ::selection {
+     color: aqua;
+     background-color: black;
+ }
+
+ /* placeholder */
+ input::placeholder {
+     color: chartreuse;
+     font-size: 13px;
+     background-color: brown;
+ }
+
+ /* first letter */
+ .box8::first-letter {
+     font-size: 34px;
+ }
