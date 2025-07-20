@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.im1 {
+    float: left;
+
+}
+
+.main {
+    background-color: aqua;
+    display: flow-root;
+    border: 2px solid red;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 12px;
+    padding: 23;
+}
+
+.im2 {
+    float: right;
+}
+
+.second {
+    background-color: rgb(51, 228, 228);
+    display: flow-root;
+    border: 2px solid red;
+}
+
+.box2 {
+    border: 1px solid black;
+    margin: 12px;
+    padding: 23;
+}
+
+.box2:nth-child(3) {
+    clear: both;
+
+}
