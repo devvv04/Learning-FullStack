@@ -1,0 +1,90 @@
+.con {
+    border: 3px solid black;
+    display: grid;
+    grid-template-columns: 100px 120px;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.item {
+    border: 2px solid red;
+    width: 50px;
+    height: 55px;
+    margin: 4px;
+}
+
+.con2 {
+    border: 3px solid black;
+    display: grid;
+    /* lets name also */
+    grid-template-columns: [pehla]100px [dusra]100px [tisra]100px [chotha]100px [pachwa]100px;
+    grid-template-rows: 100px 100px 100px 100px;
+    height: 60vh;
+    justify-content: center;
+
+}
+
+.item2 {
+    border: 2px solid red;
+    width: 50px;
+    height: 55px;
+    margin: 4px;
+}
+
+.individual {
+    grid-row: 1/2;
+    grid-column: tisra/pachwa;
+    width: auto;
+}
+
+/* second way, using grid template area  */
+.con3 {
+    border: 3px solid black;
+    display: grid;
+    height: 300px;
+    width: 70vw;
+    grid-template-areas: "nav nav nav"
+        "side article article"
+        "foot foot foot";
+    padding: 3px;
+
+}
+
+.item3 {
+    border: 2px solid red;
+    height: auto;
+    margin: 1px;
+}
+
+.item-nav {
+    grid-area: nav;
+}
+
+.item-side {
+    grid-area: side;
+}
+
+.item-art {
+    grid-area: article;
+}
+
+.item-foot {
+    grid-area: foot;
+}
+
+/* for fr size unit */
+.con4 {
+    border: 3px solid black;
+    display: grid;
+    height: 30vh;
+    width: 80vw;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 34px;
+
+}
+
+.item4 {
+    border: 2px solid red;
+    margin: 3px;
+    height: 10vh;
+
+}
