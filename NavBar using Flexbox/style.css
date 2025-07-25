@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: beige;
+}
+
+.right ul {
+    display: flex;
+    gap: 40px;
+}
+
+.right ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li svg {
+    padding: 0px 3px;
+}
