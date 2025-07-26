@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.right ul {
+    display: flex;
+    gap: 40px;
+}
+
+.right ul li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right ul li svg {
+    padding: 0px 3px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 30px;
+    margin: 43px auto;
+
+}
+
+.first span {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 43px;
+
+}
+
+.first span img {
+    margin: 0px 9px;
+}
+
+.first .abc {
+    width: 880px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.first .btn {
+    background-color: #00b6d1;
+    padding: 13px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.second {
+    max-width: 70vw;
+    margin: 40px auto
+}
+
+.download {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3px;
+}
+
+.big {
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 32px;
+    gap: 23px;
+
+}
+
+.item {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    padding: 23px;
+    width: 267px;
+    height: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.lang {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 67px;
+    font-size: 23px;
+}
+
+.downbtn {
+    padding: 13px;
+    font-size: 13px;
+    font-weight: 700px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:400px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        margin-top: 32px;
+        gap: 23px;
+    }
+}
+
+@media screen and (max-width:160px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        margin-top: 32px;
+        gap: 23px;
+    }
+}
