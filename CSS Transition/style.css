@@ -1,0 +1,22 @@
+.cont {
+    background-color: antiquewhite;
+    width: 60vw;
+    height: 40vh;
+}
+
+
+
+.box {
+    background-color: aqua;
+    width: 6vw;
+    height: 4vh;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(1, 0.37, 0.55, 1.36);
+    transition-delay: 1s;
+}
+
+.tr {
+    transform: translateX(10vw) translateY(10vh) scale(2);
+    background-color: blue;
+}
