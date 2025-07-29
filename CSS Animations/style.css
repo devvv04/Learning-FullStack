@@ -1,0 +1,77 @@
+.cont {
+    background-color: blanchedalmond;
+    width: 70vw;
+    height: 90vh;
+}
+
+.box {
+
+    background-color: blue;
+    width: 8vw;
+    height: 8vh;
+    /* animation-name: dev;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-delay: 1s;
+    /* animation-play-state: paused; */
+    /* animation-fill-mode: forwards; */
+    animation: devCombined 1s ease-in-out 1s 4 alternate forwards;
+    /* dev2 3s ease-in-out 1s 4 normal forwards; */
+
+}
+
+@keyframes dev {
+    from {
+        background-color: red;
+    }
+
+    to {
+        transform: translateY(82vh);
+        background-color: burlywood;
+    }
+
+}
+
+@keyframes dev2 {
+    10% {
+        transform: rotate(70deg);
+
+    }
+
+    30% {
+        transform: rotate(140deg);
+    }
+
+    60% {
+        transform: rotate(230deg);
+    }
+
+    100% {
+        transform: rotate(350deg);
+    }
+
+}
+
+@keyframes devCombined {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(20vh) rotate(70deg);
+    }
+
+    50% {
+        transform: translateY(40vh) rotate(140deg);
+    }
+
+    75% {
+        transform: translateY(60vh) rotate(230deg);
+    }
+
+    100% {
+        transform: translateY(82vh) rotate(350deg);
+    }
+}
