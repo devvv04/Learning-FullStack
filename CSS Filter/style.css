@@ -1,0 +1,11 @@
+
+.img1{
+filter: blur(2px);
+
+}
+.img2{
+    filter: sepia(100%);
+}
+.img3{
+    filter: opacity(80%) contrast(90%);
+}
