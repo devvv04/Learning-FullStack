@@ -1,0 +1,39 @@
+.card {
+    display: flex;
+    width: 75vw;
+    border: 2px solid black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 20vh;
+    margin: 3px;
+}
+
+.thumbnail {
+    position: relative;
+}
+
+.thumbnail img {
+    width: 30vw;
+    height: 19vh;
+    object-fit: fill;
+    display: block;
+}
+
+.text {
+    padding-left: 3px;
+}
+
+.duration {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+    background-color: rgb(49, 45, 45);
+    color: white;
+    opacity: 80%;
+    padding: 3px;
+    border-radius: 3px;
+    display: flex;
+    width: 40px;
+    align-content: center;
+    justify-content: center;
+}
