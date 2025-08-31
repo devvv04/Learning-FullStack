@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 20vh;
+        border: 2px solid black;
+        font-size: large;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+</style>
+
+<body>
+    <div class="box">i am a box</div>
+</body>
+<script>
+    function getRandomColor() {
+        let val1 = Math.ceil(Math.random() * 254);
+        let val2 = Math.ceil(Math.random() * 254);
+        let val3 = Math.ceil(Math.random() * 254);
+        return `rgb(${val1}, ${val2}, ${val3})`
+    }
+    let a = setInterval(() => {
+        document.querySelector(".box").style.background = getRandomColor();
+        document.querySelector(".box").style.color = getRandomColor();
+    }, 1000);
+
+    console.log(a);
+    clearInterval(1);
+
+    setTimeout(() => {
+         document.querySelector(".box").style.background = getRandomColor();
+    }, 3000);
+
+    clearTimeout(1);
+
+</script>
+
+</html>
