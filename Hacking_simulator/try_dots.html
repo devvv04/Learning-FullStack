@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacking Simulation</title>
+  <style>
+    body {
+      background: black;
+      color: #00ff00;
+      font-family: monospace;
+      font-size: 18px;
+      padding: 20px;
+    }
+    .line {
+      margin: 5px 0;
+    }
+    .dots {
+      display: inline-block;
+      width: 30px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    function radnom() {
+      return (Math.floor(Math.random() * 7) + 1) * 1000;
+    }
+
+    function withDots(message, delay) {
+      return new Promise((resolve) => {
+        let container = document.createElement("div");
+        container.className = "line";
+        container.textContent = message;
+        
+        let dotsSpan = document.createElement("span");
+        dotsSpan.className = "dots";
+        container.appendChild(dotsSpan);
+        
+        document.getElementById("output").appendChild(container);
+
+        let dots = "";
+        let interval = setInterval(() => {
+          dots = dots.length < 3 ? dots + "." : "";
+          dotsSpan.textContent = dots;
+        }, 500);
+
+        setTimeout(() => {
+          clearInterval(interval);
+          dotsSpan.textContent = " ✅";
+          resolve(message);
+        }, delay);
+      });
+    }
+
+    async function init() { return withDots("Initializing Hacking", radnom()); }
+    async function read() { return withDots("Reading your Files", radnom()); }
+    async function pass() { return withDots("Password Files Detected", radnom()); }
+    async function server() { return withDots("Sending all password and personal files to server", radnom()); }
+    async function clean() { return withDots("Cleaning up", radnom()); }
+
+    async function main() {
+      await init();
+      await read();
+      await pass();
+      await server();
+      await clean();
+
+      let done = document.createElement("div");
+      done.className = "line";
+      done.textContent = "Hacking Successful ✅";
+      document.getElementById("output").appendChild(done);
+    }
+
+    main();
+  </script>
+</body>
+</html>
